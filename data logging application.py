@@ -1,6 +1,3 @@
-#Application to add details of applicant such as name,phonenumber,placename,bodytemperature
-
-
 from openpyxl import *
 from tkinter import *
 
@@ -18,7 +15,7 @@ def excel():
     sheet.cell(row=1, column=1).value = "Name"
     sheet.cell(row=1, column=2).value = "Phone Number"
     sheet.cell(row=1, column=3).value = "Place Name"
-    sheet.cell(row=1, column=4).value = "Body Temperature"
+    sheet.cell(row=1, column=4).value = "Body Temperature(F)"
 
 
 def focus1(event):
@@ -86,7 +83,7 @@ if __name__ == "__main__":
 
     placename = Label(root,height=4,text="PLACE NAME", bg="light green")
 
-    bodytemperature = Label(root,height=4, text="BODY TEMPERATURE ", bg="light green")
+    bodytemperature = Label(root,height=4, text="BODY TEMPERATURE (F) ", bg="light green")
 
     heading.grid(row=0, column=1)
     name.grid(row=1, column=0)
